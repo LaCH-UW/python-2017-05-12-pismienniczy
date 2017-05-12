@@ -43,10 +43,10 @@ def make_plot(file1, file2, words):
     freq1 = count_freq(file1)
     freq2 = count_freq(file2)
 
-    print(return_values(freq1, words))
-    print(return_values(freq2, words))
+    res1 = return_values(freq1, words)
+    res2 = return_values(freq2, words)
 
-    line_plot(return_values(freq1, words), return_values(freq2, words), words)
+    line_plot(res1, res2, words)
 
 make_plot(title1, title2, words)
 
